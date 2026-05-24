@@ -1,0 +1,17 @@
+TASK SPACE:
+1. solve IK at every time step
+2. Path of EE is our concern
+3. If we solve IK only at the waypoints its path would be arbitrary (not in our control)
+
+JOINT SPACE:
+1. Solve IK only at waypoints
+2. Path of EE is NOT our concern
+3. Joint angles are interpolated between the two waypoints using linear, cubic, quintic etc. trajectories
+4. Both jerky and smooth motion of joints are possible (depends on type of interpolation), but motion of end effector may     still be jerky
+
+
+LINEAR INTERPOLATION: Joints and EE starts and stop suddenly with jerk and velocity remains constant
+
+CUBIC INTERPOLATION: Velocity of joints and EE is zero at start and end points but they start with sudden jerk and stop with sudden jerk i.e acceleration at the start and end points is mathematically infinite
+
+QUINTIC INTERPOLATION: Velocity and acceleration both are smooth i.e joints and EE start and stop very smoothly
