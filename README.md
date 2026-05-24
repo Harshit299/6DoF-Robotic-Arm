@@ -89,7 +89,8 @@ Top View:
 <img width="731" height="552" alt="top view" src="https://github.com/user-attachments/assets/e8adce9c-648f-41de-bf34-d98466e26d84" />
 
 Revolute Joints and Links:
-<img width="1083" height="740" alt="manipulator" src="https://github.com/user-attachments/assets/7a51cae5-aac9-4c70-a114-744aff782f46" />
+<img width="1078" height="738" alt="manipulator" src="https://github.com/user-attachments/assets/8b26fff6-859c-4b76-85ae-1b16d60565d3" />
+
 
 
 MANIPULATOR IMAGES IN RVIZ:
