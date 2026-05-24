@@ -1,4 +1,4 @@
-🤖 6DoF Robotic Manipulator (FANUC LR Mate 200iC)
+🦾 6DoF Robotic Manipulator (FANUC LR Mate 200iC)
 
 This project implements a 6-DOF robotic arm with:
 1. Forward Kinematics (FK)
