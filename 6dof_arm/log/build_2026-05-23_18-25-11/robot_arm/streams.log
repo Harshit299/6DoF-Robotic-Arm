@@ -1,0 +1,24 @@
+[0.740s] Invoking command in '/home/hkumar456/6dof_arm/src/robot_arm': PYTHONPATH=/home/hkumar456/6dof_arm/build/robot_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm build --build-base /home/hkumar456/6dof_arm/build/robot_arm/build install --record /home/hkumar456/6dof_arm/build/robot_arm/install.log --single-version-externally-managed install_data
+[0.888s] running egg_info
+[0.891s] writing ../../build/robot_arm/robot_arm.egg-info/PKG-INFO
+[0.891s] writing dependency_links to ../../build/robot_arm/robot_arm.egg-info/dependency_links.txt
+[0.891s] writing entry points to ../../build/robot_arm/robot_arm.egg-info/entry_points.txt
+[0.892s] writing requirements to ../../build/robot_arm/robot_arm.egg-info/requires.txt
+[0.892s] writing top-level names to ../../build/robot_arm/robot_arm.egg-info/top_level.txt
+[0.894s] reading manifest file '../../build/robot_arm/robot_arm.egg-info/SOURCES.txt'
+[0.895s] writing manifest file '../../build/robot_arm/robot_arm.egg-info/SOURCES.txt'
+[0.895s] running build
+[0.895s] running build_py
+[0.896s] copying robot_arm/Joint_Space_Cubic_Trajectory.py -> /home/hkumar456/6dof_arm/build/robot_arm/build/lib/robot_arm
+[0.897s] running install
+[0.897s] running install_lib
+[0.899s] copying /home/hkumar456/6dof_arm/build/robot_arm/build/lib/robot_arm/Joint_Space_Cubic_Trajectory.py -> /home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages/robot_arm
+[0.900s] byte-compiling /home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages/robot_arm/Joint_Space_Cubic_Trajectory.py to Joint_Space_Cubic_Trajectory.cpython-310.pyc
+[0.912s] running install_data
+[0.912s] running install_egg_info
+[0.914s] removing '/home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages/robot_arm-0.0.0-py3.10.egg-info' (and everything under it)
+[0.924s] Copying ../../build/robot_arm/robot_arm.egg-info to /home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages/robot_arm-0.0.0-py3.10.egg-info
+[0.926s] running install_scripts
+[0.945s] Installing joint_space_cubic_trajectory_node script to /home/hkumar456/6dof_arm/install/robot_arm/lib/robot_arm
+[0.946s] writing list of installed files to '/home/hkumar456/6dof_arm/build/robot_arm/install.log'
+[0.967s] Invoked command in '/home/hkumar456/6dof_arm/src/robot_arm' returned '0': PYTHONPATH=/home/hkumar456/6dof_arm/build/robot_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/hkumar456/6dof_arm/install/robot_arm/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_arm build --build-base /home/hkumar456/6dof_arm/build/robot_arm/build install --record /home/hkumar456/6dof_arm/build/robot_arm/install.log --single-version-externally-managed install_data

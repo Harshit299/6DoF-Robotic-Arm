@@ -1,0 +1,435 @@
+<?xml version="1.0"?>
+
+<robot name="fanuc_style_6dof">
+
+    <!-- ===================================================== -->
+    <!-- MATERIALS -->
+    <!-- ===================================================== -->
+
+    <material name="blue">
+        <color rgba="0 0 1 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+
+    <material name="green">
+        <color rgba="0 1 0 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.5 0 1"/>
+    </material>
+
+    <material name="cyan">
+        <color rgba="0 1 1 1"/>
+    </material>
+
+    <material name="pink">
+        <color rgba="1 0 1 1"/>
+    </material>
+
+    <material name="purple">
+        <color rgba="0.5 0 0.5 1"/>
+    </material>
+
+    <material name="grey">
+        <color rgba="0.6 0.6 0.6 1"/>
+    </material>
+
+
+    <!-- ===================================================== -->
+    <!-- WORLD -->
+    <!-- ===================================================== -->
+
+    <link name="world"/>
+
+
+    <!-- ===================================================== -->
+    <!-- BASE -->
+    <!-- ===================================================== -->
+
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder radius="8" length="10"/>
+            </geometry>
+
+            <origin xyz="0 0 5" rpy="0 0 0"/>
+
+            <material name="blue"/>
+        </visual>
+    </link>
+
+    <joint name="Joint1" type="revolute">
+
+        <!-- Ground attached -->
+
+        <parent link="world"/>
+        <child link="base_link"/>
+
+        <!-- Base at origin -->
+
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+
+        <!-- Rotation about global Z -->
+
+        <axis xyz="0 0 1"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- LINK 1 : vertical -->
+    <!-- ===================================================== -->
+
+    <link name="Link1">
+
+        <visual>
+
+            <!-- Cylinder along Z -->
+
+            <origin xyz="0 0 32.5" rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder radius="3" length="65"/>
+            </geometry>
+
+            <material name="grey"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="fixed_vertical" type="fixed">
+
+        <parent link="base_link"/>
+        <child link="Link1"/>
+
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- CORNER 1 -->
+    <!-- ===================================================== -->
+
+    <link name="corner1">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="black"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="corner1_joint" type="fixed">
+
+        <parent link="Link1"/>
+        <child link="corner1"/>
+
+        <origin xyz="0 0 65" rpy="0 0 0"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- JOINT 2 -->
+    <!-- ===================================================== -->
+
+    <link name="Link2">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="red"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="Joint2" type="revolute">
+
+        <parent link="corner1"/>
+        <child link="Link2"/>
+
+        <!-- Offset along +X -->
+
+        <origin xyz="7.5 0 0" rpy="0 0 0"/>
+
+        <!-- Rotation about global/local Y -->
+
+        <axis xyz="0 1 0"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- UPPER ARM -->
+    <!-- ===================================================== -->
+
+    <link name="Link3">
+
+        <visual>
+
+            <!-- Cylinder along Z -->
+
+            <origin xyz="0 0 45.25" rpy="0 0 0"/>
+
+            <geometry>
+                <cylinder radius="3" length="90.5"/>
+            </geometry>
+
+            <material name="grey"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="upper_arm_fixed" type="fixed">
+
+        <parent link="Link2"/>
+        <child link="Link3"/>
+
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- JOINT 3 -->
+    <!-- ===================================================== -->
+
+    <link name="">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="green"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="joint3" type="revolute">
+
+        <parent link="upper_arm"/>
+        <child link="joint3_link"/>
+
+        <origin xyz="0 0 90.5" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- CORNER 2 -->
+    <!-- ===================================================== -->
+
+    <link name="corner2">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="black"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="corner2_joint" type="fixed">
+
+        <parent link="joint3_link"/>
+        <child link="corner2"/>
+
+        <origin xyz="0 0 12" rpy="0 0 0"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- JOINT 4 -->
+    <!-- ===================================================== -->
+
+    <link name="joint4_link">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="orange"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="joint4" type="revolute">
+
+        <parent link="corner2"/>
+        <child link="joint4_link"/>
+
+        <!-- Horizontal offset -->
+
+        <origin xyz="16.875 0 0" rpy="0 0 0"/>
+
+        <!-- Rotation about X -->
+
+        <axis xyz="1 0 0"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- WRIST LINK -->
+    <!-- ===================================================== -->
+
+    <link name="wrist_link">
+
+        <visual>
+
+            <!-- Horizontal cylinder along X -->
+
+            <origin xyz="34.8125 0 0" rpy="0 1.5708 0"/>
+
+            <geometry>
+                <cylinder radius="3" length="69.625"/>
+            </geometry>
+
+            <material name="grey"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="wrist_fixed" type="fixed">
+
+        <parent link="joint4_link"/>
+        <child link="wrist_link"/>
+
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- JOINT 5 -->
+    <!-- ===================================================== -->
+
+    <link name="joint5_link">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="cyan"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="joint5" type="revolute">
+
+        <parent link="wrist_link"/>
+        <child link="joint5_link"/>
+
+        <origin xyz="69.625 0 0" rpy="0 0 0"/>
+
+        <axis xyz="0 1 0"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- JOINT 6 -->
+    <!-- ===================================================== -->
+
+    <link name="joint6_link">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="5"/>
+            </geometry>
+
+            <material name="pink"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="joint6" type="revolute">
+
+        <parent link="joint5_link"/>
+        <child link="joint6_link"/>
+
+        <origin xyz="9.4 0 0" rpy="0 0 0"/>
+
+        <axis xyz="1 0 0"/>
+
+        <limit lower="-3.14" upper="3.14" effort="100" velocity="2"/>
+
+    </joint>
+
+
+    <!-- ===================================================== -->
+    <!-- END EFFECTOR -->
+    <!-- ===================================================== -->
+
+    <link name="ee_link">
+
+        <visual>
+
+            <geometry>
+                <sphere radius="6"/>
+            </geometry>
+
+            <material name="purple"/>
+
+        </visual>
+
+    </link>
+
+    <joint name="ee_fixed" type="fixed">
+
+        <parent link="joint6_link"/>
+        <child link="ee_link"/>
+
+        <origin xyz="40 0 0" rpy="0 0 0"/>
+
+    </joint>
+
+</robot>

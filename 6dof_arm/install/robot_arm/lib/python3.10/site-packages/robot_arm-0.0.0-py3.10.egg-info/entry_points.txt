@@ -1,0 +1,3 @@
+[console_scripts]
+task_space_cubic_trajectory_node = robot_arm.Task_Space_Cubic_Trajectory:main
+
