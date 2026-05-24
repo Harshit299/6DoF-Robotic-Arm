@@ -95,7 +95,9 @@ Revolute Joints and Links:
 
 
 
+
 MANIPULATOR IMAGES IN RVIZ:
+
 <img width="744" height="656" alt="arm3" src="https://github.com/user-attachments/assets/1ca8d97f-2b14-4166-85f7-158ecd5a32ce" />
 <img width="742" height="616" alt="arm2" src="https://github.com/user-attachments/assets/a932673c-c756-4f34-9a03-6f23a53c1cea" />
 <img width="713" height="671" alt="arm1" src="https://github.com/user-attachments/assets/f121e1b9-20a0-433b-a3c1-812a0faa923d" />
