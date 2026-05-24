@@ -76,6 +76,8 @@ This project implements a 6-DOF robotic arm with:
 ├─── Notes.txt
 
 
+
+
 MANIPULATOR IMAGES: (Cylinders are representing revolute joints)
 
 Side View: K is the wrist centre
