@@ -79,9 +79,12 @@ This project implements a 6-DOF robotic arm with:
 MANIPULATOR IMAGES: (Cylinders are representing revolute joints)
 
 Side View:
-<img width="587" height="769" alt="Side view" src="https://github.com/user-attachments/assets/a6eb9cf8-ca96-4b52-b1f5-40a3e7377cb2" /> <img width="700" height="728" alt="Screenshot 2026-05-24 213142" src="https://github.com/user-attachments/assets/b2efaef3-2f5d-4aa3-8a36-5104abec168e" />
+
+<img width="587" height="769" alt="Side view" src="https://github.com/user-attachments/assets/a6eb9cf8-ca96-4b52-b1f5-40a3e7377cb2" /> 
+<img width="700" height="728" alt="Screenshot 2026-05-24 213142" src="https://github.com/user-attachments/assets/b2efaef3-2f5d-4aa3-8a36-5104abec168e" />
 
 Top View: 
+
 <img width="731" height="552" alt="top view" src="https://github.com/user-attachments/assets/e8adce9c-648f-41de-bf34-d98466e26d84" />
 
 Revolute Joints and Links:
