@@ -17,10 +17,10 @@ T4 = np.deg2rad(T4)
 T5 = np.deg2rad(T5)
 T6 = np.deg2rad(T6)
 
-# Link offsets
+# Link lengths
 a1, a2, a3 = 7.5, 30.0, 7.5
 
-# Link lengths
+# Link offsets
 d1, d2, d3 = 30.0, 32.0, 24.0
 
 # DH Parameter Table
