@@ -92,7 +92,8 @@ Side View: K is the wrist centre
 
 Top View: 
 
-<img width="731" height="552" alt="top view" src="https://github.com/user-attachments/assets/e8adce9c-648f-41de-bf34-d98466e26d84" />
+<img width="953" height="609" alt="top view" src="https://github.com/user-attachments/assets/08abc235-e3a9-4acb-8964-2bdb2c007c36" />
+
 
 Revolute Joints and Links:
 <img width="1133" height="762" alt="manipulator" src="https://github.com/user-attachments/assets/c510933a-966d-4a82-91ca-4fab930709ca" />
