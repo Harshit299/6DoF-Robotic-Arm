@@ -23,7 +23,11 @@ This project implements a 6-DOF robotic arm with:
 4. NumPy, Matplotlib
 
 
+
+
 📂 PROJECT STRUCTURE:
+
+
 <img width="786" height="605" alt="s1" src="https://github.com/user-attachments/assets/359e6f34-eada-4df5-821f-735c3b9c66b9" />
 <img width="870" height="657" alt="s2" src="https://github.com/user-attachments/assets/7f1a1127-e7b5-4682-87ba-b4ce5b037bee" />
 
