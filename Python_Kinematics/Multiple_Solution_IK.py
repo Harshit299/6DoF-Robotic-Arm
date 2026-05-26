@@ -136,9 +136,17 @@ def return_targets():
     target_extrinsic = (Rz @ Ry @ Rx) @ R_zero
 
     # 2. INTRINSIC rotation
-    Rx_EE = np.array([[1, 0, 0], [0, np.cos(yaw), -np.sin(yaw)], [0, np.sin(yaw), np.cos(yaw)]])
-    Ry_EE = np.array([[np.cos(-pitch), 0, np.sin(-pitch)], [0, 1, 0], [-np.sin(-pitch), 0, np.cos(-pitch)]])
-    Rz_EE = np.array([[np.cos(roll), -np.sin(roll), 0], [np.sin(roll), np.cos(roll), 0], [0, 0, 1]])
+    Rx_EE = np.array([[1,      0,            0], 
+                      [0, np.cos(yaw), -np.sin(yaw)], 
+                      [0, np.sin(yaw), np.cos(yaw)]])
+    
+    Ry_EE = np.array([[np.cos(-pitch), 0, np.sin(-pitch)], 
+                      [0,              1,       0], 
+                      [-np.sin(-pitch),0, np.cos(-pitch)]])
+    
+    Rz_EE = np.array([[np.cos(roll), -np.sin(roll), 0], 
+                      [np.sin(roll),  np.cos(roll), 0], 
+                      [0,                  0,       1]])
 
     target_intrinsic = R_zero @ (Rx_EE @ Ry_EE @ Rz_EE)
 
