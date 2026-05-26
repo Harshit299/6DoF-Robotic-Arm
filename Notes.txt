@@ -20,5 +20,5 @@ QUINTIC INTERPOLATION: Velocity and acceleration both are smooth i.e joints and 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 TYPES OF ROTATIONS OF A COORDINATE FRAME:
-1. EXTRINSIC Rotation: First rotate about global x --> then about global y --> then about global z
-2. INTRINSIC Rotation: First rotate about local z --> then about new local y --> then about newest local x
+1. EXTRINSIC Rotation: Every rotation occurs around the axes of the fixed global coordinate system. The axes never move.
+2. INTRINSIC Rotation: Every rotation occurs around the axes of the local coordinate system, which moves and rotates with the object after every step.
