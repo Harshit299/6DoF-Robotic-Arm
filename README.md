@@ -24,56 +24,9 @@ This project implements a 6-DOF robotic arm with:
 
 
 📂 PROJECT STRUCTURE:
-6DoF_Robotic_Arm/
-│
-├── 6dof_arm/
-│   │
-│   ├── src/
-│   │   │
-│   │   └── robot_arm/
-│   │       ├── URDF/
-│   │       │   ├── LR-Mate-200iC.urdf
-│   │       │
-│   │       ├── launch/
-│   │       │   ├── launch.py
-│   │       │
-│   │       ├── meshes/
-│   │       │   ├── Link1.STL
-│   │       │   ├── Link2.STL
-│   │       │   ├── Link3.STL
-│   │       │   ├── Link4.STL
-│   │       │   ├── Link5.STL
-│   │       │   └── Link6.STL
-│   │       │   ├── base_link.STL
-│   │       │
-│   │       ├── resource/
-│   │       │   ├── robot_arm
-│   │       │
-│   │       └── robot_arm/
-│   │       │   ├── __init__.py
-│   │       │   ├── Joint_Space_Cubic_Trajectory.py
-│   │       │   ├── Task_Space_Cubic_Trajectory.py
-│   │       │
-│   │       └── test/
-│   │           ├── test_copyright.py
-│   │           ├── test_flake8.py
-│   │           ├── test_pep257.py
-│   │
-├── Python_Kinematics/
-│   ├── Articulated_FK.py
-│   ├── Desired_Trajectory.py
-│   ├── Joint_Space_Cubic_Trajectory.py
-│   ├── Joint_Space_Linear_Trajectory.py
-│   ├── Joint_Space_Quintic_Trajectory.py
-│   ├── Multiple_Solution_IK.py
-│   ├── Single_Solution_IK.py
-│   ├── Task_Space_Cubic_Trajectory.py
-│   ├── Task_Space_Linear_Trajectory.py
-│   ├── Task_Space_Quintic_Trajectory.py
-│
-├─── .gitignore
-├─── LR Mate 200iC Series_10.pdf
-├─── Notes.txt
+<img width="786" height="605" alt="s1" src="https://github.com/user-attachments/assets/359e6f34-eada-4df5-821f-735c3b9c66b9" />
+<img width="870" height="657" alt="s2" src="https://github.com/user-attachments/assets/7f1a1127-e7b5-4682-87ba-b4ce5b037bee" />
+
 
 
 
