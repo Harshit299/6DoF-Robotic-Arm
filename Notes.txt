@@ -9,9 +9,16 @@ JOINT SPACE:
 3. Joint angles are interpolated between the two waypoints using linear, cubic, quintic etc. trajectories
 4. Both jerky and smooth motion of joints are possible (depends on type of interpolation), but motion of end effector may     still be jerky
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 
 LINEAR INTERPOLATION: Joints and EE starts and stop suddenly with jerk and velocity remains constant
 
 CUBIC INTERPOLATION: Velocity of joints and EE is zero at start and end points but they start with sudden jerk and stop with sudden jerk i.e acceleration at the start and end points is mathematically infinite
 
 QUINTIC INTERPOLATION: Velocity and acceleration both are smooth i.e joints and EE start and stop very smoothly
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+TYPES OF ROTATIONS OF A COORDINATE FRAME:
+1. EXTRINSIC Rotation: First rotate about global x --> then about global y --> then about global z
+2. INTRINSIC Rotation: First rotate about local z --> then about new local y --> then about newest local x
