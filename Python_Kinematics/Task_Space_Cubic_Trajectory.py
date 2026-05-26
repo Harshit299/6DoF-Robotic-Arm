@@ -2,10 +2,10 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 
-# Link offsets
+# Link lengths
 a1, a2, a3 = 7.5, 30.0, 7.5
 
-# Link lengths
+# Link offsets
 d1, d2, d3 = 30.0, 32.0, 24.0
 
 # Matrix representing EE frame orientation wrt base frame in zero configuration
