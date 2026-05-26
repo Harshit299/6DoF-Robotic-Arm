@@ -7,10 +7,10 @@ from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point
 
 
-# Link offsets
+# Link lengths
 a1, a2, a3 = 7.5, 30.0, 7.5
 
-# Link lengths
+# Link offsets
 d1, d2, d3 = 33.0, 32.0, 24.0
 
 class TrajectoryNode(Node):
