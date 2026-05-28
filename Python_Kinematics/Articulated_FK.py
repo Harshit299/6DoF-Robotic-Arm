@@ -1,5 +1,11 @@
 import numpy as np
 
+# Link lengths
+a1, a2, a3 = 7.5, 30.0, 7.5
+
+# Link offsets
+d1, d2, d3 = 33.0, 32.0, 24.0
+
 def forward_kinematics(t1_deg, t2_deg, t3_deg, t4_deg, t5_deg, t6_deg):
 
     # Convert input angles to radians
@@ -9,12 +15,6 @@ def forward_kinematics(t1_deg, t2_deg, t3_deg, t4_deg, t5_deg, t6_deg):
     T4 = np.deg2rad(t4_deg)
     T5 = np.deg2rad(t5_deg)
     T6 = np.deg2rad(t6_deg)
-
-    # Link lengths
-    a1, a2, a3 = 7.5, 30.0, 7.5
-
-    # Link offsets
-    d1, d2, d3 = 30.0, 32.0, 24.0
 
     # DH Parameter Table
     PT = [[T1,                  (90/180)*np.pi,   a1, d1], 
