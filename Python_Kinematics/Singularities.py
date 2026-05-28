@@ -152,8 +152,8 @@ ax2.set_xlabel("Theta 4 (deg)")
 ax2.set_ylabel("Theta 5 (deg)")
 ax2.set_zlabel("Condition Number (Danger Level)")
 
-t4_vals = np.arange(-180, 181, 3)
-t5_vals = np.arange(-180, 181, 3)
+t4_vals = np.linspace(-90, 90, 40)
+t5_vals = np.linspace(-90, 90, 40)
 T4, T5 = np.meshgrid(t4_vals, t5_vals)
 Cond_Grid = np.zeros_like(T4)
 
