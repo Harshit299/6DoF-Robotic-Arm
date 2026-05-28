@@ -105,6 +105,23 @@ EE jerk profiles (Task Space Quintic Interpolation):
 <img width="1147" height="729" alt="TQ_j" src="https://github.com/user-attachments/assets/045ce610-38e4-4133-9275-246b0aa12f12" />
 
 
+
+
+Arm Singularities:
+
+<img width="928" height="921" alt="Arm_singularity" src="https://github.com/user-attachments/assets/fa044ff7-08d3-4fae-aef0-0df3667b03df" />
+
+
+
+
+Wrist Singularity:
+
+<img width="908" height="909" alt="wrist_singularity_view1" src="https://github.com/user-attachments/assets/7309d374-3521-42e7-bbc8-bbe27da21feb" />
+<img width="895" height="914" alt="wrist_singularity_view2" src="https://github.com/user-attachments/assets/d61399b3-aa92-4f8e-a240-43f6a9297a3a" />
+
+
+
+
 ▶️ HOW TO RUN?
 1. cd 6DoF-Robotic-Arm/6dof_arm
 2. colcon build
