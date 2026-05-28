@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 a1, a2, a3 = 7.5, 30.0, 7.5
 
 # Link offsets
-d1, d2, d3 = 30.0, 32.0, 24.0
+d1, d2, d3 = 33.0, 32.0, 24.0
 
 # Matrix representing EE frame orientation wrt base frame in zero configuration
 R_zero = np.matrix([
