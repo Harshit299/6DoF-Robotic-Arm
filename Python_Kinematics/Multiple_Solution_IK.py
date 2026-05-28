@@ -21,7 +21,7 @@ T6 = np.deg2rad(T6)
 a1, a2, a3 = 7.5, 30.0, 7.5
 
 # Link offsets
-d1, d2, d3 = 30.0, 32.0, 24.0
+d1, d2, d3 = 33.0, 32.0, 24.0
 
 # DH Parameter Table
 PT = [[T1,                  (90/180)*np.pi,   a1, d1], 
