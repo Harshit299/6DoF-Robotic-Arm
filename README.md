@@ -69,22 +69,22 @@ MANIPULATOR IMAGES IN RVIZ:
 PLOTS:
 
 Joint velocity profiles (Joint Space Linear Interpolation): 
-<img width="1143" height="733" alt="JL_v" src="https://github.com/user-attachments/assets/5e6696b9-6d2c-4553-b13a-c0f5651572a2" />
+<img width="1108" height="735" alt="jl_v" src="https://github.com/user-attachments/assets/fd5e2c43-ab90-445a-b4af-bbd592cdb41b" />
 
 Joint velocity profiles (Joint Space Cubic Interpolation):
-<img width="1133" height="736" alt="JC_v" src="https://github.com/user-attachments/assets/ad645ab5-fdf8-44a5-b4a3-65498d6331fe" />
+<img width="1102" height="702" alt="jc_v" src="https://github.com/user-attachments/assets/f37ffeef-5311-4332-aeac-bf2cbbe1faf1" />
 
 Joint acceleration profiles (Joint Space Cubic Interpolation):
-<img width="1112" height="710" alt="JC_a" src="https://github.com/user-attachments/assets/0d832d71-e17d-4b87-99c3-b563777c780d" />
+<img width="1075" height="702" alt="jc_a" src="https://github.com/user-attachments/assets/fd2f1369-313b-42b5-88dc-9c2be984dfd9" />
 
 Joint velocity profiles (Joint Space Quintic Interpolation):
-<img width="1164" height="734" alt="JQ_v" src="https://github.com/user-attachments/assets/9b803e01-66c5-4ca3-b2f4-081ad48d49fd" />
+<img width="1102" height="717" alt="jq_v" src="https://github.com/user-attachments/assets/46d877e6-22c0-48de-8f29-111e94664fbc" />
 
 Joint acceleration profiles (Joint Space Quintic Interpolation):
-<img width="1088" height="739" alt="JQ_a" src="https://github.com/user-attachments/assets/e4bd4ae5-190d-4314-93bf-a3ce1923559e" />
+<img width="1027" height="702" alt="jq_a" src="https://github.com/user-attachments/assets/9d651e33-3ad6-4f74-8fcb-d3d5b419e0a3" />
 
 Joint jerk profiles (Joint Space Quintic Interpolation):
-<img width="1139" height="761" alt="JQ_j" src="https://github.com/user-attachments/assets/08ed4154-c479-4cae-8782-11133bfb1467" />
+<img width="1018" height="690" alt="jq_j" src="https://github.com/user-attachments/assets/7069a849-d4ce-4209-bed6-87a692152640" />
 
 EE velocity profiles (Task Space Linear Interpolation):
 <img width="1144" height="733" alt="TL_v" src="https://github.com/user-attachments/assets/c08e6719-a012-4de6-8d62-a1b382d05abd" />
