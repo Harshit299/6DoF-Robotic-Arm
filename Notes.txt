@@ -22,3 +22,41 @@ QUINTIC INTERPOLATION: Velocity and acceleration both are smooth i.e joints and 
 TYPES OF ROTATIONS OF A COORDINATE FRAME:
 1. EXTRINSIC Rotation: Every rotation occurs around the axes of the fixed global coordinate system. The axes never move.
 2. INTRINSIC Rotation: Every rotation occurs around the axes of the local coordinate system, which moves and rotates with the object after every step.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+JACOBIAN:
+1. doesn't depend on where the centre of coord frame and actual joint centre are located
+2. jacobian only requires:
+   axis of rotation or translation
+   origin of coord frame must be lying on that axis
+
+3. gives the instantaneous velocity at particular instant of time wrt base frame
+
+--------------------------------------------------------------------------------------------------------
+
+SVD is Ultimate:
+1. it takes a matrix of any order (not necessary square)
+2. breaks it down into UEVT
+3. E is diagonal matrix consisting of singular values along diagonal
+4. singular values are basically lengths of semi-axes of manipulability ellipsoid
+5. If we calculate the Singular Values via SVD, we don't just get the warning sign of failing direction. we get the exact mathematical way required to isolate that failing direction, apply a damping factor (lambda) to that specific sigma, and safely push the arm through the singularity without crashing the code!
+6. If you feed an m x n matrix into an SVD algorithm, U will be an m x m square matrix.
+7. U represents the physical output space. Because it has 6 columns, it provides exactly 6 orthogonal 3D vectors representing the principal Cartesian directions our end-effector can move (3 translations, 3 rotations).
+8. The columns of the V matrix are called the Right Singular Vectors. They represent the exact combinations of joint velocities required to move along the axes of your manipulability ellipsoid.
+9. If U is the "output space", then V is the "input space" (our motors).
+
+--------------------------------------------------------------------------------------------------------
+
+CONDITION NUMBER:
+1. ratio of max singular value to min singular value in E
+2. it only tells that some of the directions in manipulability ellipsoid are easily reachable while other are not, but doesn't tell which of those directions are?
+3. It tells use how close we are to the singularity
+4. high condition no. --> close to singularity
+
+--------------------------------------------------------------------------------------------------------
+
+DETERMINANT:
+1. It tells us is the robot currently IN a singularity? (Yes or No)
+2. As your robot moves toward a singularity, the determinant might stay seemingly healthy (e.g., $0.9$, $0.8$, $0.7$) and    then suddenly drop off a cliff to $0.0001$ in a single millimeter of movement. It does not provide a reliable "distance" to the singularity
+3. Det = sigma1 x sigma2 x ... x sigma6
