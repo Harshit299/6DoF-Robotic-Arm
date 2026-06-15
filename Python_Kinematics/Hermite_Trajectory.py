@@ -218,13 +218,15 @@ def generate_trajectory(start_pos, end_pos, start_vel, end_vel, start_roll, end_
 
     for t in t_values:
 
-        p = a*t**3 + b*t**2 + c*t + d
+        # Using S-curve to smooth out velocity and acceleration
+        s = 10*(t**3) - 15*(t**4) + 6*(t**5)
+        p = a*s**3 + b*s**2 + c*s + d
         p = np.array(p).flatten()
 
         cur_x, cur_y, cur_z = p[0], p[1], p[2]
         current_pos = [float(cur_x), float(cur_y), float(cur_z)]
 
-        v = 3*a*t**2 + 2*b*t + c # dp/dt
+        v = 3*a*s**2 + 2*b*s + c # dp/dt
         v = np.array(v).flatten()
         v_x, v_y, v_z = v[0], v[1], v[2]
         current_vel = [float(v_x), float(v_y), float(v_z)]
