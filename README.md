@@ -1,10 +1,6 @@
 # 🦾 6-DoF Robotic Manipulator (FANUC LR Mate 200iC)
 
-![ROS2](https://img.shields.io/badge/ROS2-Humble-34a853?style=flat&logo=ros)
-
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat&logo=python)
-
-![RViz2](https://img.shields.io/badge/Visualization-RViz2-orange?style=flat)
+![ROS2](https://img.shields.io/badge/ROS2-Humble-34a853?style=flat&logo=ros)  ![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat&logo=python)   ![RViz2](https://img.shields.io/badge/Visualization-RViz2-orange?style=flat)
 
 A comprehensive implementation of a 6-Degree-of-Freedom (6-DoF) robotic arm based on the **FANUC LR Mate 200iC**.
 
@@ -433,10 +429,4 @@ Additional project notes are available in:
 ```text
 Notes.txt
 ```
-
----
-
-
-**ROS 2 Humble + Python + NumPy + Matplotlib + RViz2**
-
 ---
