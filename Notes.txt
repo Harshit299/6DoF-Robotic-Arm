@@ -7,7 +7,7 @@ JOINT SPACE:
 1. Solve IK only at waypoints
 2. Path of EE is NOT our concern
 3. Joint angles are interpolated between the two waypoints using linear, cubic, quintic etc. trajectories
-4. Both jerky and smooth motion of joints are possible (depends on type of interpolation), but motion of end effector may     still be jerky
+4. Both jerky and smooth physical motion are possible depending on the interpolation (linear vs. quintic). If joint interpolation is smooth, the EE motion will also be physically smooth, but its geometric path through the air will be uncontrolled and unpredictable.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -58,5 +58,5 @@ CONDITION NUMBER:
 
 DETERMINANT:
 1. It tells us is the robot currently IN a singularity? (Yes or No)
-2. As your robot moves toward a singularity, the determinant might stay seemingly healthy (e.g., $0.9$, $0.8$, $0.7$) and    then suddenly drop off a cliff to $0.0001$ in a single millimeter of movement. It does not provide a reliable "distance" to the singularity
+2. As your robot moves toward a singularity, the determinant might stay seemingly healthy (e.g., $0.9$, $0.8$, $0.7$) and then suddenly drop off a cliff to 0.0001 in a single millimeter of movement. It does not provide a reliable "distance" to the singularity
 3. Det = sigma1 x sigma2 x ... x sigma6
