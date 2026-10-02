@@ -36,8 +36,8 @@ JACOBIAN:
 --------------------------------------------------------------------------------------------------------
 
 SVD is Ultimate:
-1. it takes a matrix of any order (not necessary square)
-2. breaks it down into UEVT
+1. it takes a matrix of any order (not necessarily square)
+2. breaks it down into U∑VT
 3. E is diagonal matrix consisting of singular values along diagonal
 4. singular values are basically lengths of semi-axes of manipulability ellipsoid
 5. If we calculate the Singular Values via SVD, we don't just get the warning sign of failing direction. we get the exact mathematical way required to isolate that failing direction, apply a damping factor (lambda) to that specific sigma, and safely push the arm through the singularity without crashing the code!
@@ -58,5 +58,5 @@ CONDITION NUMBER:
 
 DETERMINANT:
 1. It tells us is the robot currently IN a singularity? (Yes or No)
-2. As your robot moves toward a singularity, the determinant might stay seemingly healthy (e.g., $0.9$, $0.8$, $0.7$) and then suddenly drop off a cliff to 0.0001 in a single millimeter of movement. It does not provide a reliable "distance" to the singularity
+2. As your robot moves toward a singularity, the determinant might stay seemingly healthy (e.g., 0.9, 0.8, 0.7) and then suddenly drop off a cliff to 0.0001 in a single millimeter of movement. It does not provide a reliable "distance" to the singularity
 3. Det = sigma1 x sigma2 x ... x sigma6
