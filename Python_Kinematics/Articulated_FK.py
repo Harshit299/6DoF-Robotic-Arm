@@ -16,6 +16,15 @@ def forward_kinematics(t1_deg, t2_deg, t3_deg, t4_deg, t5_deg, t6_deg):
     T5 = np.deg2rad(t5_deg)
     T6 = np.deg2rad(t6_deg)
 
+<<<<<<< HEAD
+=======
+    # Link offsets
+    a1, a2, a3 = 7.5, 30.0, 7.5
+
+    # Link lengths
+    d1, d2, d3 = 33.0, 32.0, 24.0
+
+>>>>>>> d1c8d96 (Updated URDF and STL files)
     # DH Parameter Table
     PT = [[T1,                  (90/180)*np.pi,   a1, d1], 
           [T2 + (90/180)*np.pi, 0,                a2, 0],

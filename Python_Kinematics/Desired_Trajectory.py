@@ -191,16 +191,16 @@ def generate_trajectory():
     # Ellipse parameters
     t_values = np.linspace(0, 2*np.pi, 150)
 
-    a = 70    # ellipse semi-major axis
-    b = 50     # ellipse semi-minor axis
+    a = 40    # ellipse semi-major axis
+    b = 30    # ellipse semi-minor axis
     # center of ellipse
-    xc = 50
+    xc = 80
     yc = 2
-    zc = 10
+    zc = 60
 
     trajectory_data = []
 
-    roll = np.deg2rad(-41)
+    roll = np.deg2rad(-10)
     pitch = np.deg2rad(24)
     yaw = np.deg2rad(0)
 

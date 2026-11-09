@@ -207,13 +207,33 @@ def generate_trajectory(start_pos, end_pos, start_roll, end_roll,
 
         cur_x = start_pos[0] + s * (end_pos[0] - start_pos[0])
         cur_y = start_pos[1] + s * (end_pos[1] - start_pos[1])
-        cur_z = start_pos[2] + s * (end_pos[2] - start_pos[2])
+        # cur_z = start_pos[2] + s * (end_pos[2] - start_pos[2])
+        # current_pos = [cur_x, cur_y, cur_z]
+
+        # v = 6*t - 6*(t**2) # ds_dt
+        # vx = v * (end_pos[0] - start_pos[0])
+        # vy = v * (end_pos[1] - start_pos[1])
+        # vz = v * (end_pos[2] - start_pos[2])
+        # current_vel = [vx, vy, vz]
+
+        # Add a Parabolic Hop to the Z-axis
+        # The math: 4 * s * (1-s) creates a bell curve that is 0 at start, 1 in the middle, and 0 at the end.
+        hop_height = 20.0 # Curving 20 units up into the air
+        linear_z = start_pos[2] + s * (end_pos[2] - start_pos[2])
+        cur_z = linear_z + hop_height * (4 * s * (1 - s))
+        
         current_pos = [cur_x, cur_y, cur_z]
 
+        # Velocity derivatives (must also be updated to match the new geometry)
         v = 6*t - 6*(t**2) # ds_dt
         vx = v * (end_pos[0] - start_pos[0])
         vy = v * (end_pos[1] - start_pos[1])
-        vz = v * (end_pos[2] - start_pos[2])
+        
+        # Derivative of the new Z equation using chain rule
+        vz_linear = v * (end_pos[2] - start_pos[2])
+        vz_hop = hop_height * 4 * (v * (1 - s) - s * v)
+        vz = vz_linear + vz_hop
+        
         current_vel = [vx, vy, vz]
 
         cur_roll = start_roll + s * (end_roll - start_roll)
