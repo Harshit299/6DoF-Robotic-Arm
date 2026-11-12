@@ -359,6 +359,14 @@ Task-space trajectories describe the motion of the end-effector in Cartesian spa
 
 ---
 
+## Dynamics 
+
+### Joint Torques (at payload 1000 Kg)
+
+<img width="1486" height="605" alt="Screenshot 2026-11-12 231151" src="https://github.com/user-attachments/assets/2c1e9fd4-62ed-4bdc-b150-0951ee9e7418" />
+<img width="1917" height="1018" alt="Screenshot 2026-11-12 231305" src="https://github.com/user-attachments/assets/d9478f4c-03b5-49a6-a9ef-624f56d6c8c6" />
+
+
 # ⚠️ Singularity Analysis
 
 Singularities are configurations where the manipulator loses one or more independent directions of motion.
