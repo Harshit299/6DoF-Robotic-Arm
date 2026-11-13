@@ -361,11 +361,18 @@ Task-space trajectories describe the motion of the end-effector in Cartesian spa
 
 ## Dynamics 
 
-### Joint Torques (at payload 1000 Kg)
+### Joint Torques (at payload 500 Kg)
+<img width="1487" height="608" alt="500" src="https://github.com/user-attachments/assets/86b0acc6-85ef-43d5-bdaf-ee3efea5ab12" />
 
-<img width="1486" height="605" alt="Screenshot 2026-11-12 231151" src="https://github.com/user-attachments/assets/2c1e9fd4-62ed-4bdc-b150-0951ee9e7418" />
+### Joint Torques (at payload 1000 Kg)
+<img width="1486" height="605" alt="1000" src="https://github.com/user-attachments/assets/071e7a8a-888c-41a7-a19f-d9d035601ade" />
+
+### Joint Torques (at payload 1500 Kg)
+<img width="1485" height="616" alt="1500" src="https://github.com/user-attachments/assets/48687438-5efc-4764-a26f-3f854cd5a0e7" />
+
 <img width="1917" height="1018" alt="Screenshot 2026-11-12 231305" src="https://github.com/user-attachments/assets/d9478f4c-03b5-49a6-a9ef-624f56d6c8c6" />
 
+---
 
 # ⚠️ Singularity Analysis
 
